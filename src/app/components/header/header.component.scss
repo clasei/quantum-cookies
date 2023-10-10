@@ -2,13 +2,17 @@ header {
     text-align: center;
   
     h1 {
-      font-size: 2em;
+      font-size: 2.9em;
+      font-weight: bold;
+      letter-spacing: 2px;
       color: rgb(255, 38, 201);
+      text-shadow: 0 0 3px #ffffff, 0 0 2px cyan;
       padding-top: 100px;
     }
   
     h3 {
       font-size: 1em;
+      font-weight: 400;
       color: cyan;
     }
   }
