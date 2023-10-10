@@ -7,7 +7,7 @@
     placeholder="Your thoughts start here">
 </textarea>
 <p *ngIf="isMaxCharsReached" class="error-msg">
-    Wow, that's a lot! Keep it under 240 characters
+    Keep it simple, like a Feynman explanation — under 240 characters will be ok
 </p>
 <button [disabled]="!isInputValid" (click)="generateFeynmanQuote()">Check with Feynman</button>
 

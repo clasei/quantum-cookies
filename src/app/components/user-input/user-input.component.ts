@@ -12,7 +12,6 @@ export class UserInputComponent implements OnInit {
   isMaxCharsReached = false;
   isInputValid = false;
 
-
   constructor(private feynmanSaysService: FeynmanSaysService) {}
 
   ngOnInit(): void {
