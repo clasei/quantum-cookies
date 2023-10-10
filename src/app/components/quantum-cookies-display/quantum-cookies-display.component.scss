@@ -1,0 +1,19 @@
+.quote-container {
+    width: 80%;
+    max-width: 500px;
+    min-height: 100px;
+    background-color: rgba(224, 184, 213, 0.9);
+    border: 3px solid rgb(255, 38, 201);
+    padding: 0.7rem;
+    margin: 20px auto;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.quote-text {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 600;
+    color: black;
+    line-height: 1.5;
+}

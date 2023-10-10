@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-quantum-cookies-display',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./quantum-cookies-display.component.scss']
 })
 export class QuantumCookiesDisplayComponent {
-
+  @Input() quote: string = '';
 }

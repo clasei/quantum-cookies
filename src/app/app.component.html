@@ -1,3 +1,6 @@
-<app-header></app-header>
-<app-user-input></app-user-input>
+<div class="app-container">
+    <app-header></app-header>
+    <app-user-input (newQuote)="handleNewQuote($event)"></app-user-input>
+    <app-quantum-cookies-display [quote]="currentQuote"></app-quantum-cookies-display>
+ </div>
 <router-outlet></router-outlet>

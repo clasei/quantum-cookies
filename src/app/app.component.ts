@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'quantumCookies';
+  currentQuote: string = '';
+
+  handleNewQuote(quote: string): void {
+    this.currentQuote = quote;
+  }
 }

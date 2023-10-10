@@ -15,9 +15,9 @@ export class FeynmanSaysService {
   getRandomQuote(): Observable<string> {
     return this.http.get<string[]>(this.QUOTES_URL).pipe(
       map(quotes => {
-        const randomIndex = Math.floor(Math.random() * quotes.length);
-        return quotes[randomIndex];
+          const randomIndex = Math.floor(Math.random() * quotes.length);
+          return quotes[randomIndex];
       })
-    );
+    );  
   }
 }
