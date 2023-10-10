@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { FeynmanSaysService } from '../../feynman-says.service';
 
 @Component({
@@ -6,11 +6,12 @@ import { FeynmanSaysService } from '../../feynman-says.service';
   templateUrl: './user-input.component.html',
   styleUrls: ['./user-input.component.scss']
 })
-
 export class UserInputComponent implements OnInit {
   userInput = '';
   isMaxCharsReached = false;
   isInputValid = false;
+
+  @Output() newQuote = new EventEmitter<string>();
 
   constructor(private feynmanSaysService: FeynmanSaysService) {}
 
@@ -33,12 +34,11 @@ export class UserInputComponent implements OnInit {
   generateFeynmanQuote(): void {
     this.feynmanSaysService.getRandomQuote().subscribe(
       quote => {
-        console.log(quote);
-        // [TODO] adjust the displayed quote (UI)
+        console.log(quote);  // debug: can be removed later
+        this.newQuote.emit(quote);
       },
       error => {
         console.error('Error fetching quote', error);
-        // [TODO] adjust the displayed errors (UI)
       }
     );
   }
@@ -48,4 +48,3 @@ export class UserInputComponent implements OnInit {
     this.isInputValid = this.userInput.length > 0 && !this.isMaxCharsReached;
   }
 }
-
