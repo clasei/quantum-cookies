@@ -1,1 +1,11 @@
-<p>user-input works!</p>
+<label for="userThoughts">What's on your mind today?</label>
+<textarea 
+    id="userThoughts" 
+    [(ngModel)]="userInput" 
+    maxlength="200" 
+    (input)="checkMaxLength($event); adjustTextarea($event)"
+    placeholder="Your thoughts start here">
+</textarea>
+<p *ngIf="isMaxCharsReached" class="error-msg">
+    Wow, that's a lot! Let's try to make it short & sweet
+</p>
