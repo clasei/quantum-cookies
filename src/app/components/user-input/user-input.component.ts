@@ -12,6 +12,7 @@ export class UserInputComponent implements OnInit {
   isMaxCharsReached = false;
   isInputValid = false;
 
+
   constructor(private feynmanSaysService: FeynmanSaysService) {}
 
   ngOnInit(): void {
@@ -34,17 +35,17 @@ export class UserInputComponent implements OnInit {
     this.feynmanSaysService.getRandomQuote().subscribe(
       quote => {
         console.log(quote);
-        // [TODO] Manejar cómo se muestra la cita en la UI.
+        // [TODO] adjust the displayed quote (UI)
       },
       error => {
         console.error('Error fetching quote', error);
-        // [TODO] Manejar la visualización de errores en la UI.
+        // [TODO] adjust the displayed errors (UI)
       }
     );
   }
 
   private validateInput(): void {
-    this.isMaxCharsReached = this.userInput.length >= 200;
+    this.isMaxCharsReached = this.userInput.length >= 240;
     this.isInputValid = this.userInput.length > 0 && !this.isMaxCharsReached;
   }
 }
