@@ -15,5 +15,15 @@ header {
       font-weight: 400;
       color: cyan;
     }
+
+    @media only screen and (max-width: 600px) {
+      h1 {
+          font-size: 2em;
+          padding-top: 50px;
+      }
+      h3 {
+          font-size: 0.9em;
+      }
+    }
   }
   

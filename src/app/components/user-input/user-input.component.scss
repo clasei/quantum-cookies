@@ -3,10 +3,10 @@ label {
     font-size: 1.1rem;
     font-weight: bold;
     color: black;
-    background-color: yellow;
+    background-color: whitesmoke;
     border-radius: 5px;
-    padding: 5px 20px;
-    margin-bottom: 0.7rem;
+    padding: 10px 25px;
+    margin-bottom: 1rem;
 }
 
 textarea {
@@ -21,8 +21,38 @@ textarea {
 
 .error-msg {
     color: yellow;
+    background-color: grey;
     font-size: 0.8rem;
     margin-top: 0.7rem;
+}
+
+button {
+    background-color: yellow;
+    border: yellow;
+    border-width: 5px;
+    border-radius: 35px;
+    color: rgb(255, 38, 201);
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 50px 5px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(255, 38, 201);
+        color: yellow;
+        border: 5px solid rgb(255, 38, 201);
+    }
+
+    &:disabled {
+        background-color: #ddd;
+        color: #aaa;
+        cursor: not-allowed;
+    }
 }
 
 @media only screen and (max-width: 600px) {
