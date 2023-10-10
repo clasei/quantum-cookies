@@ -23,6 +23,7 @@ textarea {
     color: yellow;
     background-color: darkslategray;
     font-size: 0.8rem;
+    padding: 0.3rem;
     margin-top: 0.7rem;
 }
 
@@ -32,13 +33,12 @@ button {
     border-width: 5px;
     border-radius: 35px;
     color: rgb(255, 38, 201);
-    padding: 15px 30px;
-    text-align: center;
+    padding: 15px 25px;
     text-decoration: underline;
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
-    margin: 50px 5px;
+    margin: 25px 5px;
     transition-duration: 0.4s;
     cursor: pointer;
 
@@ -49,7 +49,7 @@ button {
     }
 
     &:disabled {
-        background-color: #ddd;
+        background-color: darkslategray;
         color: #aaa;
         cursor: not-allowed;
     }

@@ -44,7 +44,7 @@ export class UserInputComponent implements OnInit {
   }
 
   private validateInput(): void {
-    this.isMaxCharsReached = this.userInput.length >= 240;
+    this.isMaxCharsReached = this.userInput.length >= 420;
     this.isInputValid = this.userInput.length > 0 && !this.isMaxCharsReached;
   }
 }

@@ -2,12 +2,12 @@
 <textarea 
     id="userThoughts" 
     [(ngModel)]="userInput" 
-    maxlength="200" 
+    maxlength="420" 
     (input)="checkMaxLength($event); adjustTextarea($event)"
     placeholder="Your thoughts start here">
 </textarea>
 <p *ngIf="isMaxCharsReached" class="error-msg">
-    Keep it simple, like a Feynman explanation — under 240 characters will be ok
+    Keep it simple, like a Feynman explanation — under 420 characters will be ok
 </p>
 <button [disabled]="!isInputValid" (click)="generateFeynmanQuote()">Check with Feynman</button>
 
