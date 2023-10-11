@@ -10,6 +10,7 @@ export class UserInputComponent implements OnInit {
   userInput = '';
   isMaxCharsReached = false;
   isInputValid = false;
+  quoteGenerated = false; 
 
   @Output() newQuote = new EventEmitter<string>();
 
@@ -36,12 +37,18 @@ export class UserInputComponent implements OnInit {
       quote => {
         console.log(quote);  // debug: can be removed later
         this.newQuote.emit(quote);
+        this.quoteGenerated = true;
       },
       error => {
         console.error('Error fetching quote', error);
       }
     );
   }
+
+  resetQuoteGeneration(): void {
+    this.quoteGenerated = false;
+    this.userInput = '';
+  }  
 
   private validateInput(): void {
     this.isMaxCharsReached = this.userInput.length >= 420;
