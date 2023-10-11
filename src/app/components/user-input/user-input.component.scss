@@ -15,6 +15,7 @@ textarea {
     min-height: 100px;
     border-radius: 15px;
     padding: 0.7rem;
+    margin: 20px auto;
     font-size: 1rem;
     resize: vertical;
 }
@@ -49,7 +50,7 @@ button {
     }
 
     &:disabled {
-        background-color: darkslategray;
+        background-color: grey;
         color: #aaa;
         cursor: not-allowed;
     }
@@ -57,7 +58,6 @@ button {
 
 @media only screen and (max-width: 600px) {
     textarea {
-        width: 95%;
         font-size: 0.9rem;
     }
 
