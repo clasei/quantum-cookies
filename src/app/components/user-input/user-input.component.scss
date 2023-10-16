@@ -1,12 +1,12 @@
 label {
     display: block;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     color: black;
     background-color: whitesmoke;
     border-radius: 5px;
     padding: 10px 25px;
-    margin-bottom: 1rem;
+
 }
 
 textarea {
@@ -14,16 +14,18 @@ textarea {
     max-width: 500px; 
     min-height: 100px;
     border-radius: 15px;
+    border: 3px solid rgb(255, 255, 255);
     padding: 0.7rem;
     margin: 20px auto;
     font-size: 1rem;
     resize: vertical;
+    background-color: rgba($color: #ffffff, $alpha: 0.7);
 }
 
 .error-msg {
     color: yellow;
     background-color: darkslategray;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     padding: 0.3rem;
     margin-top: 0.7rem;
 }
@@ -37,9 +39,9 @@ button {
     padding: 15px 25px;
     text-decoration: underline;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
-    margin: 25px 5px;
+    margin: 20px;
     transition-duration: 0.4s;
     cursor: pointer;
 
@@ -50,8 +52,8 @@ button {
     }
 
     &:disabled {
-        background-color: grey;
-        color: #aaa;
+        background-color: lightgray;
+        color: grey;
         cursor: not-allowed;
     }
 }

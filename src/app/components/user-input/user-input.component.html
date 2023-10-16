@@ -4,7 +4,7 @@
     [(ngModel)]="userInput" 
     maxlength="420" 
     (input)="checkMaxLength($event); adjustTextarea($event)"
-    placeholder="Your thoughts here">
+    placeholder="Write your thoughts here">
 </textarea>
 <p *ngIf="isMaxCharsReached" class="error-msg">
     Keep it simple, like a Feynman explanation — under 420 characters will be ok
