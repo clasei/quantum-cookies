@@ -18,3 +18,44 @@
     color: black;
     line-height: 1.5;
 }
+
+button {
+    background-color: yellow;
+    border: yellow;
+    border-width: 5px;
+    border-radius: 35px;
+    color: rgb(255, 38, 201);
+    padding: 15px 25px;
+    text-decoration: underline;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 50px auto;
+    transition-duration: 0.4s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(255, 38, 201);
+        color: yellow;
+        border: 5px solid rgb(255, 38, 201);
+    }
+
+    &:disabled {
+        background-color: lightgray;
+        color: grey;
+        cursor: not-allowed;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    button {
+        font-size: 0.9rem;
+        margin: 25px auto;
+    }
+
+    .quote-text {
+        font-size: 0.9rem;
+    }
+}
+
