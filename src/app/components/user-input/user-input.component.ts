@@ -48,6 +48,7 @@ export class UserInputComponent implements OnInit {
   resetQuoteGeneration(): void {
     this.quoteGenerated = false;
     this.userInput = '';
+    this.validateInput();
   }  
 
   private validateInput(): void {
