@@ -37,18 +37,17 @@ button {
     color: rgb(255, 38, 201);
     padding: 15px 25px;
     text-decoration: underline;
-    display: block;
+    display: inline-block;
     font-size: 0.9rem;
     font-weight: bold;
-    margin: auto;
+    margin-top: auto;
+    margin-bottom: 15px;
     transition-duration: 0.4s;
     cursor: pointer;
 
     &:hover {
         background-color: rgb(255, 38, 201);
-        color: yellow;
-        border: 5px solid rgb(255, 38, 201);
-    }
+        color: yellow;    }
 
     &:disabled {
         background-color: lightgray;
