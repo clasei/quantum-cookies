@@ -40,11 +40,17 @@ footer a:hover {
 }
 
 footer span {
-    margin: 0 5px;
+    margin: 0 0;
 }
 
 #rocketIcon {
-    margin-left: 1px;
+    margin-left: 0px;
     margin-right: 1px;
 }
 
+@media only screen and (max-width: 768px) {
+    
+    #footer {
+        font-size: 0.5em;
+    }
+}
