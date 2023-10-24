@@ -44,7 +44,7 @@ button {
     padding: 15px 25px;
     text-decoration: underline;
     display: inline-block;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     margin: 20px;
     transition-duration: 0.4s;
@@ -69,11 +69,11 @@ button {
     }
 
     label {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     button {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .error-msg {

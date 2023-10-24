@@ -1,15 +1,15 @@
-<label for="userThoughts">What's on your mind today?</label>
+<label for="userThoughts">what's on your mind?</label>
 <textarea 
     id="userThoughts" 
     [(ngModel)]="userInput" 
     maxlength="420" 
     (input)="checkMaxLength($event); adjustTextarea($event)"
-    placeholder="Write your thoughts here">
+    placeholder="write your thoughts here">
 </textarea>
 <p *ngIf="isMaxCharsReached" class="error-msg">
-    Keep it simple, like a Feynman explanation — under 420 characters will be ok
+    keep it simple, like a Feynman explanation — under 420 characters will be ok
 </p>
 <button [disabled]="!isInputValid || quoteGenerated" (click)="generateFeynmanQuote()">
-    Check with Feynman
+    check with Feynman
 </button>
 
