@@ -1,4 +1,4 @@
-label {
+span {
     display: block;
     font-size: 1rem;
     font-weight: bold;
@@ -14,14 +14,14 @@ label {
     min-height: 100px;
     background-color: rgba(224, 184, 213, 0.9);
     border: 3px solid rgb(255, 38, 201);
-    padding: 0.5rem;
+    padding: 0.7rem;
     margin: 20px auto;
     border-radius: 15px;
     text-align: center;
 }
 
 .quote-text {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Special Elite', sans-serif;;
     font-size: 1rem;
     font-style: italic;
     font-weight: 600;
@@ -66,7 +66,7 @@ button {
         font-size: 0.8rem;
     }
 
-    label {
+    span {
         font-size: 0.8rem;
     }
 
