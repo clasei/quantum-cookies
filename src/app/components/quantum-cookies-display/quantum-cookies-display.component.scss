@@ -3,9 +3,9 @@ span {
     font-size: 1rem;
     font-weight: bold;
     color: black;
-    background-color: whitesmoke;
+    background-color: lightseagreen;
     border-radius: 5px;
-    padding: 10px
+    padding: 5px 10px;
 }
 
 .quote-container {
@@ -13,9 +13,10 @@ span {
     max-width: 500px;
     min-height: 100px;
     background-color: rgba(224, 184, 213, 0.9);
-    border: 3px solid rgb(255, 38, 201);
+    border: 1px solid rgb(255, 38, 201);
     padding: 0.7rem;
-    margin: 20px auto;
+    margin-top: 5px;
+    margin-bottom: 25px;
     border-radius: 15px;
     text-align: center;
 }
@@ -31,15 +32,15 @@ span {
 
 button {
     background-color: yellow;
-    border: yellow;
-    border-width: 5px;
     border-radius: 35px;
     color: rgb(255, 38, 201);
-    padding: 15px 25px;
+    padding: 10px 25px;
     text-decoration: underline;
     display: inline-block;
-    font-size: 0.9rem;
-    font-weight: bold;
+    font-family: 'Trebuchet MS';
+    font-weight: 350;
+    font-size: 1rem;
+    letter-spacing: 3px;
     margin-top: auto;
     margin-bottom: 15px;
     transition-duration: 0.4s;

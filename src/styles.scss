@@ -7,7 +7,8 @@ body {
     content: "";
     position: fixed;
     scale: 1.3;
-    width: auto; 
+    width: auto;
+    height: 100vh;
     top: 0;
     right: 0;
     bottom: 0;
@@ -27,7 +28,7 @@ app-user-input, app-quantum-cookies-display {
  }
 
  .app-container {
-  overflow: auto;
+  overflow-y: auto; 
   -webkit-overflow-scrolling: touch;
   padding-bottom: 100px;
 }
