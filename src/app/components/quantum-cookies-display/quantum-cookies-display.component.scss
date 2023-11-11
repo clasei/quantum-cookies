@@ -24,7 +24,6 @@ span {
 .quote-text {
     font-family: 'Special Elite', sans-serif;;
     font-size: 1rem;
-    font-style: italic;
     font-weight: 600;
     color: black;
     line-height: 1.5;
@@ -39,9 +38,9 @@ button {
     display: inline-block;
     font-family: 'Trebuchet MS';
     font-weight: 350;
-    font-size: 1rem;
-    letter-spacing: 3px;
-    margin-top: auto;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    margin-top: 10px;
     margin-bottom: 15px;
     transition-duration: 0.4s;
     cursor: pointer;
