@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { UserInputComponent } from './components/user-input/user-input.component';
 import { ActionButtonComponent } from './components/action-button/action-button.component';
-import { RefreshButtonComponent } from './components/refresh-button/refresh-button.component';
 import { QuantumCookiesDisplayComponent } from './components/quantum-cookies-display/quantum-cookies-display.component';
 import { InfoComponent } from './components/info/info.component';
 import { FooterComponent } from './components/footer/footer.component';
@@ -20,7 +19,6 @@ import { FooterComponent } from './components/footer/footer.component';
     HeaderComponent,
     UserInputComponent,
     ActionButtonComponent,
-    RefreshButtonComponent,
     QuantumCookiesDisplayComponent,
     InfoComponent,
     FooterComponent
