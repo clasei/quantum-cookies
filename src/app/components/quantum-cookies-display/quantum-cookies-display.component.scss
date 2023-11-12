@@ -22,7 +22,7 @@ span {
 }
 
 .quote-text {
-    font-family: 'Special Elite', sans-serif;;
+    font-family: 'Special Elite', 'Courier New', Courier, monospace, sans-serif;;
     font-size: 1rem;
     font-weight: 600;
     color: black;
@@ -64,6 +64,7 @@ button {
 
     .quote-text {
         font-size: 0.8rem;
+        letter-spacing: 0.7px;
     }
 
     span {

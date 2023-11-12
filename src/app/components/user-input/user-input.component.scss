@@ -18,18 +18,18 @@ textarea {
     margin-top: 5px;
     margin-bottom: 25px;
     font-size: 1rem;
-    resize: vertical;
     background-color: rgba($color: #ffffff, $alpha: 0.7);
 }
 
 ::placeholder {
+    font-family: 'Courier New', Courier, monospace;
     color: grey;  
     opacity: 0.9; 
   }
 
 .error-msg {
-    color: yellow;
-    background-color: darkslategray;
+    color: white;
+    background-color: lightcoral;
     font-size: 0.7rem;
     padding: 0.3rem;
     margin-top: 0.7rem;
@@ -74,6 +74,7 @@ button {
 
     button {
         font-size: 0.7rem;
+        letter-spacing: 0.7px;
         margin-bottom: auto;
     }
 
