@@ -5,8 +5,9 @@
         #userInputComponent>
     </app-user-input>
     <app-quantum-cookies-display 
+        [quoteGenerated]="quoteGenerated"
         [quote]="currentQuote"
-        (resetEvent)="userInputComponent.resetQuoteGeneration()">
+        (resetEvent)="handleReset()">
     </app-quantum-cookies-display>
 
     <app-footer></app-footer>

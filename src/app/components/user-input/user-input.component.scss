@@ -4,6 +4,7 @@ span {
     font-weight: bold;
     color: black;
     background-color: lightseagreen;
+    opacity: 0.8;
     border-radius: 5px;
     padding: 5px 10px;
 }
@@ -18,18 +19,19 @@ textarea {
     margin-top: 5px;
     margin-bottom: 25px;
     font-size: 1rem;
-    resize: vertical;
-    background-color: rgba($color: #ffffff, $alpha: 0.7);
+    background-color: rgba($color: #cccccc, $alpha: 0.7);
+    caret-color: yellow;
 }
 
 ::placeholder {
-    color: grey;  
-    opacity: 0.9; 
+    font-family: 'Courier New', Courier, monospace;
+    color: whitesmoke;  
+    opacity: 0.5; 
   }
 
 .error-msg {
-    color: yellow;
-    background-color: darkslategray;
+    color: white;
+    background-color: lightcoral;
     font-size: 0.7rem;
     padding: 0.3rem;
     margin-top: 0.7rem;
@@ -39,17 +41,16 @@ button {
     background-color: yellow;
     border-radius: 35px;
     color: rgb(255, 38, 201);
-    padding: 10px 25px;
-    text-decoration: underline;
+    padding: 7px 20px;
     display: inline-block;
     font-family: 'Trebuchet MS';
-    font-weight: 350;
+    font-weight: 500;
     font-size: 0.9rem;
     letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    transition-duration: 0.4s;
+    margin: 5px auto;
+    transition: all 0.4s ease;
     cursor: pointer;
+    box-shadow: 0px 3px 4px 0px rgba(252, 255, 78, 0.642);
 
     &:hover {
         background-color: rgb(255, 38, 201);
@@ -65,6 +66,7 @@ button {
 @media only screen and (max-width: 600px) {
     textarea {
         font-size: 0.8rem;
+        margin-bottom: 15px;
     }
 
     span {
@@ -73,7 +75,8 @@ button {
     }
 
     button {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
+        letter-spacing: 0.6px;
         margin-bottom: auto;
     }
 
