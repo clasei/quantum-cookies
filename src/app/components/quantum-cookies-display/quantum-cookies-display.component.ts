@@ -7,10 +7,13 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 })
 export class QuantumCookiesDisplayComponent {
   @Input() quote: string = '';
+  @Input() quoteGenerated: boolean = false;
   @Output() resetEvent = new EventEmitter<void>();
   
   onReset() {
-    this.quote = '';
-    this.resetEvent.emit();
+    if (this.quoteGenerated) {
+      this.quote = '';
+      this.resetEvent.emit();
+    }
   }
 }

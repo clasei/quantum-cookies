@@ -3,6 +3,6 @@
     <p class="quote-text">{{ quote }}</p>
 </div>
 
-<button (click)="onReset()">
+<button (click)="onReset()" [disabled]="!quoteGenerated">
         do it again
 </button>

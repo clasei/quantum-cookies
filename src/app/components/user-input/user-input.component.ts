@@ -55,4 +55,12 @@ export class UserInputComponent implements OnInit {
     this.isMaxCharsReached = this.userInput.length >= 420;
     this.isInputValid = this.userInput.length > 0 && !this.isMaxCharsReached;
   }
+
+  public resetInput(): void {
+    this.userInput = '';
+    this.isMaxCharsReached = false;
+    this.isInputValid = false;
+    this.quoteGenerated = false;
+    this.validateInput();
+  }
 }
