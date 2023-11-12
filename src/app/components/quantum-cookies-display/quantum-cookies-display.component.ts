@@ -10,6 +10,7 @@ export class QuantumCookiesDisplayComponent {
   @Output() resetEvent = new EventEmitter<void>();
   
   onReset() {
+    this.quote = '';
     this.resetEvent.emit();
   }
 }
