@@ -11,6 +11,7 @@ import { UserInputComponent } from './components/user-input/user-input.component
 import { ActionButtonComponent } from './components/action-button/action-button.component';
 import { QuantumCookiesDisplayComponent } from './components/quantum-cookies-display/quantum-cookies-display.component';
 import { InfoComponent } from './components/info/info.component';
+import { CodeLinkComponent } from './components/code-link/code-link.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
@@ -21,7 +22,8 @@ import { FooterComponent } from './components/footer/footer.component';
     ActionButtonComponent,
     QuantumCookiesDisplayComponent,
     InfoComponent,
-    FooterComponent
+    FooterComponent,
+    CodeLinkComponent
   ],
   imports: [
     HttpClientModule,
