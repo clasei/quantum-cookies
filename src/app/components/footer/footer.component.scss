@@ -1,10 +1,11 @@
 
 #footer {
     font-family: 'Roboto Mono', monospace;
-    color: darkslategrey;
-    font-size: 0.7em;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 5px;
+    color: rgb(40, 49, 49);
+    font-size: 0.85rem;
+    font-weight: 600;
+    background-color: rgba(222, 219, 184, 0.704);
+    padding: 7px;
     width: 100%;
     position: fixed;
     bottom: 0;
@@ -16,7 +17,8 @@
 footer a {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(92, 97, 255);
+    color: rgb(41, 47, 223);
+    background-color: #fce149ca;
     margin: 2px;
     transition: color 0.5s;
 }
@@ -39,6 +41,6 @@ footer span {
 @media only screen and (max-width: 768px) {
     
     #footer {
-        font-size: 10px;
+        font-size: 0.75rem;
     }
 }
