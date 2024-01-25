@@ -1,24 +1,29 @@
 
 #footer {
     font-family: 'Roboto Mono', monospace;
-    color: rgb(40, 49, 49);
-    font-size: 0.85rem;
-    font-weight: 600;
-    background-color: #fce1499a;
-    padding: 7px;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
+    color: rgba(194, 194, 194, 0.902);
+    font-size: 0.75rem;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 95%;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    box-shadow: 0 3px 10px rgba(147, 147, 147, 0.7);
     box-sizing: border-box;
+    border-radius: 13px;
+    margin: 10px 25px;
+    margin-bottom: 10px;
+    bottom: 0;
+    position: fixed;
+    display: flex;
 }
 
 footer a {
     text-decoration: none;
     font-weight: bold;
     color: rgb(41, 47, 223);
-    background-color: rgba(237, 237, 237, 0.75);
+    background-color: #fce149ac;
     margin: 2px;
     transition: color 0.5s;
 }
@@ -42,5 +47,6 @@ footer span {
     
     #footer {
         font-size: 0.75rem;
+        margin: 10px 10px;
     }
 }
