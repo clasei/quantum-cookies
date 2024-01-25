@@ -54,12 +54,14 @@ button {
 
     &:hover {
         background-color: rgb(255, 38, 201);
-        color: yellow;    }
+        color: yellow;    
+    }
 
     &:disabled {
         background-color: lightgray;
         color: grey;
         cursor: not-allowed;
+        box-shadow: 0px 4px 4px 0px rgba(192, 192, 192, 0.5);
     }
 }
 

@@ -1,19 +1,19 @@
 
 #footer {
     font-family: 'Roboto Mono', monospace;
-    color: rgba(194, 194, 194, 0.902);
+    color: rgba(255, 255, 255, 0.7);
     font-size: 0.75rem;
     font-weight: 500;
     background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 3px 10px rgba(147, 147, 147, 0.7);
     padding: 10px;
     width: 95%;
     text-align: center;
     justify-content: center;
-    box-shadow: 0 3px 10px rgba(147, 147, 147, 0.7);
     box-sizing: border-box;
     border-radius: 13px;
     margin: 10px 25px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     bottom: 0;
     position: fixed;
     display: flex;
@@ -48,5 +48,6 @@ footer span {
     #footer {
         font-size: 0.75rem;
         margin: 10px 10px;
+        margin-bottom: 10px;
     }
 }
